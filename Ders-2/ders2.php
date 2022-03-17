@@ -130,12 +130,18 @@
     echo "$x ceil yuvarlamasi sonucu" . ceil($x) . "<br>";
 
     echo "<h5>Rastgele sayi uretme Islemi (rand(x)</h5>";
-    echo "10-100 Arasinda Rastgele Sayi Uretildi:" . rand(10, 100)."<br>";
+    echo "10-100 Arasinda Rastgele Sayi Uretildi:" . rand(10, 100) . "<br>";
 
     for ($i = 1; $i < 10; $i++) {
-        echo "$i. Sayi:". rand(0,100)."<br>";
+        echo "$i. Sayi:" . rand(0, 100) . "<br>";
     }
 
+    /* Ödev */
+    for ($i = 0; $i <= 10; $i++)
+        $dizi[$i] = rand(1, 100);
+
+    for ($i = 0; $i < count($dizi); $i++)
+        echo $dizi[$i] . " ";
 
 
 
