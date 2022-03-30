@@ -22,7 +22,7 @@
                 Cift tirnak ile kullanildiginda icerisindeki degiskenilerin
                 icerigini ekrana yazar.
                 Nokta operatoru ile birlestirme islemi yapilabilir.
-                Ter Slash(/) kacis karakteridir.Ozel ifadelerden once kullanilir.
+                Ters Slash(/) kacis karakteridir.Ozel ifadelerden once kullanilir.
       
       */
       echo "<h3> Samet Kotu</h3>";
@@ -52,7 +52,7 @@
 
         /* Uygulama:
         Universite-myo-ad-soyad-numara degiskenlerini tanmlayiniz
-        Bu degiskenlerin icerilerin tablo veya ggorm iceriginde ekrana yazdiriniz.
+        Bu degiskenlerin icerilerin tablo veya form iceriginde ekrana yazdiriniz.
         */
         $universite="Adnan Menderes";
         $myo="Myo";
