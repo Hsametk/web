@@ -76,6 +76,12 @@
                                              Mobil Programlama
 
     */
+
+   
+
+
+    echo '<br>';
+
     $ogrenciDetaylari = array(
         "ogr1" => array(
             "id"        => 1,
@@ -124,7 +130,49 @@
     echo "<pre>";
     print_r($ogrenciDetaylari);
     echo "</pre>";
+    echo "<hr>";
+    echo "<h3>Odev</h3>";
+ 
+    echo "<table border=1>
+    <tr>
+    <td>#id</td>
+    <td>#adi</td>
+    <td>#soyadi</td>
+    <td>#bölüm</td>
+    <td>#dersler</td>
+    <td>#sinif</td>
+    </tr>";
+    echo "<tr><td>".$ogrenciDetaylari['ogr1']['id']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr1']['adi']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr1']['soyadi']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr1']['bolum']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr1']['dersler']['ders1']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr1']['sınıf']."</td>";
+    echo"<tr><td></td><td></td><td></td><td></td><td>".$ogrenciDetaylari['ogr1']['dersler']['ders2']."</td></tr>";
+    echo"<tr><td></td><td></td><td></td><td></td><td>".$ogrenciDetaylari['ogr1']['dersler']['ders3']."</td></tr>";
 
+    echo "<tr><td>".$ogrenciDetaylari['ogr2']['id']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr2']['adi']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr2']['soyadi']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr2']['bolum']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr2']['dersler']['ders1']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr2']['sınıf']."</td>";
+    echo"<tr><td></td><td></td><td></td><td></td><td>".$ogrenciDetaylari['ogr2']['dersler']['ders2']."</td></tr>";
+    echo"<tr><td></td><td></td><td></td><td></td><td>".$ogrenciDetaylari['ogr2']['dersler']['ders3']."</td></tr>";
+    
+    echo "<tr><td>".$ogrenciDetaylari['ogr3']['id']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr3']['adi']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr3']['soyadi']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr3']['bolum']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr3']['dersler']['ders1']."</td>";
+    echo"<td>".$ogrenciDetaylari['ogr3']['sınıf']."</td>";
+    echo"<tr><td></td><td></td><td></td><td></td><td>".$ogrenciDetaylari['ogr3']['dersler']['ders2']."</td></tr>";
+    echo"<tr><td></td><td></td><td></td><td></td><td>".$ogrenciDetaylari['ogr3']['dersler']['ders3']."</td></tr>";
+    
+    
+    echo"</tr>";
+    echo "</table>";
+    
     ?>
 
     <h3>Koşul İfadeleri (If-Else)</h3>
@@ -164,7 +212,7 @@
 
     <?php
 
-  /*   if (condition) {
+    /*   if (condition) {
         # code...
     } elseif (condition) {
         # code...
@@ -175,7 +223,7 @@
     } else {
         # code...
     } */
-    
+
     $sayi1 = 123;
     $sayi2 = 345;
     $metin = "Adü";
@@ -256,12 +304,51 @@
     2-Rasgele 0-100 arasında üretilen değerin 50'den küçük olduğu durumlarda kaldınız, büyükse geçtiniz yazdırınız.
     3-Doğum yılına göre 18 yaşından büyük olanların ehliyet alabileceğini kontrol eden if bloğunu yazınız. */
 
-    
+    /* 1.Soru */
+
+    echo "<hr>";
+    echo "<h3>1.Soru</h3>";
+    echo " 1-Rasgele 0-100 arasında üretilen değerin tek veya çift olduğunu ekrana yazdırınız.";
+    $sayi1 = rand(0, 100);
+
+    if (fmod($sayi1, 2) == 0) {
+        echo "$sayi1 sayısı çift sayıdır.";
+    } else {
+        echo "$sayi1 sayısı tek sayıdır.";
+    }
+    echo "<hr>";
+    echo "<h3>2.Soru</h3>";
+    echo " 2-Rasgele 0-100 arasında üretilen değerin 50'den küçük olduğu durumlarda kaldınız, büyükse geçtiniz yazdırınız.";
+    if ($sayi1 <= 50) {
+        echo "Kaldiniz";
+    } else {
+        echo "Geçtiniz";
+    }
+    echo "<hr>";
+    echo "<h3>3.Soru</h3>";
+    echo "3-Doğum yılına göre 18 yaşından büyük olanların ehliyet alabileceğini kontrol eden if bloğunu yazınız.";
+    $sayi2 = rand(0, 25);
+    echo "Girilen Yas= $sayi2 <br>";
+    if ($sayi2 <= 18) {
+        $kalanYil = 18 - $sayi2;
+        echo $kalanYil . "yil sonra ehliyet alabilirsiiniz.";
+    } else {
+        echo "Ehliyet alabilirsiniz.";
+    }
 
 
     ?>
 
-
+ <!-- 
+     sorulardan biri girt ile ilgili olur 
+     dersteki uygulamalarını tekrar çöz
+     matematiksel işleemlere çalış
+     metinsel ifadelrere çalış  büyük harfe kücük harfe cevirme vs
+     kelime parçalama bölme
+     dizeler 
+     ıf else
+     
+  -->
 </body>
 
 </html>
