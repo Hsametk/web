@@ -340,7 +340,7 @@
     ?>
 
  <!-- 
-     sorulardan biri girt ile ilgili olur 
+     sorulardan biri git ile ilgili olur 
      dersteki uygulamalarını tekrar çöz
      matematiksel işleemlere çalış
      metinsel ifadelrere çalış  büyük harfe kücük harfe cevirme vs

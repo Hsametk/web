@@ -107,7 +107,7 @@
     echo "<h5>Mod Islemi (fmod(x,y)</h5>";
     $x = 20;
     $y = 4;
-    $mod = fmod($xw, $y);
+    $mod = fmod($x, $y);
     echo "$x mod $y : $mod";
     echo "<br> $x sayisi:" . (fmod($x, 2) == 0 ? "Cifttir" : "Tektir");
 
@@ -122,7 +122,7 @@
     /* En yakin en kucuk tam sayiya yuvarlar */
 
     $x = 15.913;
-    echo "$x floor yuvarlamasi sonucu" . round($x, 1) . "<br>";
+    echo "$x floor yuvarlamasi sonucu" . floor($x) . "<br>";
 
     echo "<h5>Yuvarlama Islemi (ceil(x)</h5>";
     /* Kendisinden buyuk, en kucuk tam sayiya yuvarlar */

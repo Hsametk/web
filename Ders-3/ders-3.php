@@ -28,7 +28,7 @@
     echo "<br> Degisken Icerigi: $yazi (" . gettype($yazi) . ")";
 
     // icerigin buyuk harfe donusturulmesi
-    echo "<br> \$yazi iceriginin buyuk harfle yazilmasi:" . strtoupper($yazi);
+    echo "<br> \$yazi iceriginin buyuk harfle yazilmasi:" .strtoupper($yazi);
     echo "<br> \$yazi iceriginin buyuk harfle yazilmasi:" . $buyuk_yazi = mb_strtoupper($yazi);
 
     // icerigin kucuk harfe donusturulmesi
@@ -41,7 +41,7 @@
     echo "<br> \$yazi iceriginin Tum Kelimelerinin Ilk harfının Buyuk Harfle yazilmasi:" . $kelime = ucwords($kucuk_yazi);
 
     //icerigin Harf Sayisi:
-    echo "<br> \$yazi Icerisindeki hars Sayisi:" . strlen($yazi);
+    echo "<br> \$yazi Icerisindeki harf Sayisi:" . strlen($yazi);
 
     //Asci Char Karsiligi:
     echo "<br> Karakter Karsiligi" . chr(109);
@@ -73,25 +73,30 @@
     Veri tabanindan gelen 2021-12-25 degerini 19-12-2021 seklinde ekrana yazdiriniz.*/
     $tarih = "2021-12-25";
     $yenitarih = explode("-", $tarih);
-    echo $yenitarih[2]. "-". $yenitarih[1]." -". $yenitarih[0];
+    echo $yenitarih[2] . "-" . $yenitarih[1] . " -" . $yenitarih[0];
     echo "<br>";
     //Dizinin metne donusturulmesi(implode)
-    $aylar =["Ocak","Subat","Mart","Nisan","Mayis"];
+    $aylar = ["Ocak", "Subat", "Mart", "Nisan", "Mayis"];
     print_r($aylar);
-    $aylarString= implode(" ",$aylar);
+    $aylarString = implode(" ", $aylar);
     echo $aylarString;
 
     //Verilen bir metnin belirten sayi kadar ayrilarak bir dizi iceriginde aktarilmasi. Eger sayi belirtilmez ise o metmni harf harf boler
     //str_split()
     echo "<br>";
-    $iban= "TR0010002000300040005000";
-    $ibanYeni=str_split($iban,4);
-    print_r($ibanYeni);
-    echo"<br>";
-    foreach ($ibanYeni as $parca) {
-        echo "$parca";
+    $iban = "TR0010002000300040005000";
+    $yeniIban = str_split($iban, 4);
+    echo "<pre>";
+    print_r($yeniIban);
+    echo "</pre>";
+
+    echo "<br>İmplode IBan: " . implode("-", $yeniIban);
+
+    echo "<br> Foreach Iban: ";
+    foreach ($yeniIban as $parca) {
+        echo $parca . " ";
     }
-     //Trım- Substr 
+    //Trım- Substr 
 
 
     ?>
